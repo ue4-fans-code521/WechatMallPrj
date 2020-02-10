@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "cp-swiper": "/components/cp-swiper/cp-swiper",
+    "cp-recommend": "/components/cp-recommend/cp-recommend",
+    "cp-popular": "/components/cp-popular/cp-popular",
+    "cp-nav": "/components/cp-nav/cp-nav",
+    "cp-goods": "/components/cp-goods/cp-goods",
+    "cp-backtop":"/components/cp-backtop/cp-backtop"
+  },
+  "navigationBarTitleText": "首页"
+}

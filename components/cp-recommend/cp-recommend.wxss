@@ -1,0 +1,26 @@
+/* components/cp-recommend/cp-recommend.wxss */
+/* components/swiper/swiper.wxss */
+
+.details {
+  display: flex;
+  margin-top: 10rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 10rpx solid rgb(202, 202, 202);
+}
+
+.img {
+  flex: 1;
+  text-align: center;
+}
+
+.img  image {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.img view {
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  font-weight: bold;
+  color: #777
+}

@@ -1,0 +1,6 @@
+<view class="details">
+  <view class="img" wx:for="{{rd}}" wx:key="index">
+    <image src="{{item.image}}" bindload="HandleBindLoad"/>
+    <view>{{item.title}}</view>
+  </view>
+</view>

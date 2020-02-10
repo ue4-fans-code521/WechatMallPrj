@@ -1,0 +1,12 @@
+/* components/cp-goods/cp-goods.wxss */
+
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  width: 48%;
+  position: relative;
+}

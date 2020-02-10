@@ -1,0 +1,23 @@
+<!-- 1.展示轮播图 -->
+<cp-swiper li="{{banners}}" />
+
+<!-- 2.展示本周推荐 -->
+<cp-recommend rd="{{recommends}}" 
+  bind:imageLoadComplete="handleImageLoadComplete"/>
+
+<!-- 3.展示流行 -->
+<cp-popular/>
+
+<!-- 4.显示tab-control标签 -->
+<cp-nav goods="{{titles}}" bind:cp_nav_event="handleCpNav" class="{{isTabFixed ? 'fixed':' '}}" id="cp-nav"/>
+
+<!-- 下面是找出一个替代的方案,来使滑动的时候确保只显示一个 -->
+<cp-nav goods="{{titles}}" wx:if="{{isTabFixed}}" />
+
+
+
+<!-- 5.下面我们就可以对于上面的细分类别进行详细展示了 -->
+<cp-goods goods="{{goods[currentType].list}}" />
+
+<!-- 6.加入回到顶部的自定义组件 -->
+<cp-backtop wx:if="{{showBackTop}}" />

@@ -1,0 +1,9 @@
+<!-- 使用wx:for的方式,利用外界传递过来的参数进行展示 -->
+<view class="container">
+  <block>
+    <view class="good_item {{currentindex==index?'active':''}}" wx:for="{{goods}}" wx:key="index" bindtap="handleTapClk" data-index="{{index}}">
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>
+
